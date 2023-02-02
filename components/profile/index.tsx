@@ -241,7 +241,7 @@ export default function Profile({
 
           </Link>
         </div>
-      ) : session?.username === user.username ? (
+      ) : session?.user?.name === user.username ? (
         (<Link
           href={{ query: { settings: true } }}
           as="/settings"
