@@ -29,7 +29,7 @@ export default function Navbar({
       {status !== 'loading' &&
         (session?.user ? (
           (<Link
-            href={`/${session.username}`}
+            href={`/${session.user.name}`}
             className="w-8 h-8 rounded-full overflow-hidden">
 
             <Image
